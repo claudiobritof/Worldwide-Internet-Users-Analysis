@@ -13,3 +13,4 @@ df_speed = pd.read_csv(
 df_speed.rename(columns={'Avg \n(Mbit/s)Ookla': 'Avg'}, inplace=True)
 
 # Creating a class to return to me which "continent" each "country" belongs, given a '.csv' file:
+class MapCountryRegion():
