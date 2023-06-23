@@ -16,3 +16,4 @@ df_speed.rename(columns={'Avg \n(Mbit/s)Ookla': 'Avg'}, inplace=True)
 class MapCountryRegion():
     def __init__(self):
         self.mapping_region = {}
+    def map(self, df, col_country, col_region):
