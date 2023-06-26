@@ -18,3 +18,4 @@ class MapCountryRegion():
         self.mapping_region = {}
     def map(self, df, col_country, col_region):
         for country, region in zip(df[col_country],df[col_region]):
+            self.mapping_region[country] = region
