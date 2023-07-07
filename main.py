@@ -33,3 +33,6 @@ print(mapa.mapping_region)
 
 # testing
 print(mapa.mapping_region['Brazil'])
+
+#adding a new column 'region' to "speed" DataFrame:
+df_speed['Region'] = df_speed['Country'].apply(mapa.return_region)
