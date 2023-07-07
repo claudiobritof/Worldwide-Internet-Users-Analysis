@@ -79,3 +79,6 @@ print('Provide some statistics about speed dataframe.')
 print(df_speed.describe())
 print('-'*60)
 
+print('What is the average speed of the database countries?')
+print(df_speed['Avg'].mean().__round__(2))
+print('-'*60)
