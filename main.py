@@ -19,3 +19,9 @@ class MapCountryRegion():
     def map(self, df, col_country, col_region):
         for country, region in zip(df[col_country],df[col_region]):
             self.mapping_region[country] = region
+    def return_region(self, country):
+        try:
+            return self.mapping_region[country]
+        except KeyError:
+            print('This country does not exist in the database.')
+            return None
