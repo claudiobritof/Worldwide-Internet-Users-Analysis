@@ -36,3 +36,7 @@ print(mapa.mapping_region['Brazil'])
 
 #adding a new column 'region' to "speed" DataFrame:
 df_speed['Region'] = df_speed['Country'].apply(mapa.return_region)
+
+#checking and filtering null values and creating new int columns refered to 'Population' and 'Internet Users' column:
+print(df_users.isna().sum())
+print(df_speed.isna().sum())
