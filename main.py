@@ -30,3 +30,6 @@ class MapCountryRegion():
 mapa = MapCountryRegion()
 mapa.map(df_users, 'Country or area', 'Region')
 print(mapa.mapping_region)
+
+# testing
+print(mapa.mapping_region['Brazil'])
