@@ -66,3 +66,7 @@ print(mapa.return_region('China'))
 print(mapa.return_region('Kyrgyzstan'))
 print(mapa.return_region('Australia'))
 print('-'*60)
+
+print('How many countries does not have Region related to itself?')
+print(df_speed['Region'].isnull().sum())
+print('-'*60)
