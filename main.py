@@ -74,3 +74,8 @@ print('-'*60)
 print('Which countries does not have Region related to itself?')
 print(df_speed.loc[df_speed['Region'].isnull()])
 print('-'*60)
+
+print('Provide some statistics about speed dataframe.')
+print(df_speed.describe())
+print('-'*60)
+
