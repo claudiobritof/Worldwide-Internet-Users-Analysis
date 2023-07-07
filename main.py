@@ -51,3 +51,6 @@ print('-'*60)
 
 print('Aleatory questions that could be made to this dataset:\n')
 
+print('How many countries are present in the base?')
+print(df_users['Country or area'].nunique())
+print('-'*60)
