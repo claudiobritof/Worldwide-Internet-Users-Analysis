@@ -40,3 +40,8 @@ df_speed['Region'] = df_speed['Country'].apply(mapa.return_region)
 #checking and filtering null values and creating new int columns refered to 'Population' and 'Internet Users' column:
 print(df_users.isna().sum())
 print(df_speed.isna().sum())
+
+#Fixing comma issues:
+df_users["Internet users"] = df_users["Internet users"].str.replace(',','').fillna(0).apply(int)
+print(df_users['Internet users'])
+
