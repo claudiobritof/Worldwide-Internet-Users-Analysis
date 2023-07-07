@@ -25,3 +25,8 @@ class MapCountryRegion():
         except KeyError:
             print('This country does not exist in the database.')
             return None
+        
+# Calling class and method:            
+mapa = MapCountryRegion()
+mapa.map(df_users, 'Country or area', 'Region')
+print(mapa.mapping_region)
