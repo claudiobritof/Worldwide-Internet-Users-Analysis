@@ -82,3 +82,7 @@ print('-'*60)
 print('What is the average speed of the database countries?')
 print(df_speed['Avg'].mean().__round__(2))
 print('-'*60)
+
+print('What is the average speed per continent? Values rounded down (integer).')
+print(df_speed.groupby('Region')['Avg'].mean())
+print('-'*60)
