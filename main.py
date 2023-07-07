@@ -70,3 +70,7 @@ print('-'*60)
 print('How many countries does not have Region related to itself?')
 print(df_speed['Region'].isnull().sum())
 print('-'*60)
+
+print('Which countries does not have Region related to itself?')
+print(df_speed.loc[df_speed['Region'].isnull()])
+print('-'*60)
