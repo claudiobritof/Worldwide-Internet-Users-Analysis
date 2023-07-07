@@ -45,3 +45,6 @@ print(df_speed.isna().sum())
 df_users["Internet users"] = df_users["Internet users"].str.replace(',','').fillna(0).apply(int)
 print(df_users['Internet users'])
 
+df_users['Population'] = df_users['Population'].str.replace(',','').fillna(0).apply(int)
+print(df_users['Population'])
+print('-'*60)
