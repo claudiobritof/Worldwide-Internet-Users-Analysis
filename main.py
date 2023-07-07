@@ -48,3 +48,6 @@ print(df_users['Internet users'])
 df_users['Population'] = df_users['Population'].str.replace(',','').fillna(0).apply(int)
 print(df_users['Population'])
 print('-'*60)
+
+print('Aleatory questions that could be made to this dataset:\n')
+
