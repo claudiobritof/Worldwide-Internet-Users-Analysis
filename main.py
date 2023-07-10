@@ -86,3 +86,7 @@ print('-'*60)
 print('What is the average speed per continent? Values rounded down (integer).')
 print(df_speed.groupby('Region')['Avg'].mean())
 print('-'*60)
+
+print('What is the shape of users dataframe?')
+print(df_users.shape)
+print('-'*60)
