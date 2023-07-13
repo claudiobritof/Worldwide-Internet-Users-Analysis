@@ -90,3 +90,8 @@ print('-'*60)
 print('What is the shape of users dataframe?')
 print(df_users.shape)
 print('-'*60)
+
+print('Which country has the largest population?')
+print(df_users.sort_values('Population', ascending = False).head(1))
+print('-'*60)
+
