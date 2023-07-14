@@ -104,3 +104,7 @@ print('Which countries have the least internet users?')
 print(df_users.sort_values('Internet users').head(5))
 print('-'*60)
 
+print('Describe "Proportion" values:')
+print(df_users['Proportion'].describe().round(2))
+print('-'*60)
+
