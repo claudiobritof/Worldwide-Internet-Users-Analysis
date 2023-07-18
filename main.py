@@ -112,3 +112,8 @@ print('Is there a significant difference between Asian and American access to in
 print(df_users.groupby('Region')['Proportion'].mean())
 print('No.')
 print('-'*60)
+
+print('A internet da Europa é a mais acessada e tem a maior variação entre seus países (baixo desvio padrão)?')
+print(df_users.groupby('Region').describe().round(2))
+print('No.')
+print('-'*60)
