@@ -108,3 +108,7 @@ print('Describe "Proportion" values:')
 print(df_users['Proportion'].describe().round(2))
 print('-'*60)
 
+print('Is there a significant difference between Asian and American access to internet?')
+print(df_users.groupby('Region')['Proportion'].mean())
+print('No.')
+print('-'*60)
