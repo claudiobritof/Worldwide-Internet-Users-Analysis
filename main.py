@@ -113,8 +113,11 @@ print(df_users.groupby('Region')['Proportion'].mean())
 print('No.')
 print('-'*60)
 
-print('Internet in Europe is the most accessed and has the greatest variation between its countries (low standard deviation)?')
+print('Is it true that internet in Europe is the most accessed and has the greatest variation between its countries (low standard deviation)?')
 print(df_users.groupby('Region').describe().round(2))
 print('No.')
 print('-'*60)
 
+print('Does the country in Europe with the least access to internet have more access than the country in Africa with the most access?')# --> F
+min_acc_eur = df_users[df_users['Region'] == 'Europe']['Internet users'].min()
+max_acc_afr = df_users[df_users['Region'] == 'Africa']['Internet users'].max()
