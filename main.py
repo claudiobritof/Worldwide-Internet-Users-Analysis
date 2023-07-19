@@ -121,3 +121,8 @@ print('-'*60)
 print('Does the country in Europe with the least access to internet have more access than the country in Africa with the most access?')# --> F
 min_acc_eur = df_users[df_users['Region'] == 'Europe']['Internet users'].min()
 max_acc_afr = df_users[df_users['Region'] == 'Africa']['Internet users'].max()
+if min_acc_eur > max_acc_afr:
+    print('Yes.')
+else:
+    print('No.')
+print('-'*60)
