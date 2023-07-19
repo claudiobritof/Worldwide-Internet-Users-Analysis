@@ -34,14 +34,14 @@ print(mapa.mapping_region)
 # testing
 print(mapa.mapping_region['Brazil'])
 
-#adding a new column 'region' to "speed" DataFrame:
+# Adding a new column 'region' to "speed" DataFrame:
 df_speed['Region'] = df_speed['Country'].apply(mapa.return_region)
 
-#checking and filtering null values and creating new int columns refered to 'Population' and 'Internet Users' column:
+# Checking and filtering null values and creating new int columns refered to 'Population' and 'Internet Users' column:
 print(df_users.isna().sum())
 print(df_speed.isna().sum())
 
-#Fixing comma issues:
+# Fixing comma issues:
 df_users["Internet users"] = df_users["Internet users"].str.replace(',','').fillna(0).apply(int)
 print(df_users['Internet users'])
 
@@ -113,7 +113,8 @@ print(df_users.groupby('Region')['Proportion'].mean())
 print('No.')
 print('-'*60)
 
-print('A internet da Europa é a mais acessada e tem a maior variação entre seus países (baixo desvio padrão)?')
+print('Internet in Europe is the most accessed and has the greatest variation between its countries (low standard deviation)?')
 print(df_users.groupby('Region').describe().round(2))
 print('No.')
 print('-'*60)
+
