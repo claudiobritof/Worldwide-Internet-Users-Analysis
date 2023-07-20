@@ -128,3 +128,4 @@ else:
 print('-'*60)
 
 print('Consider only countries which has more than 90% of population with internet access:')
+print(df_users[df_users['Proportion'] > 90])
