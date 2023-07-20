@@ -126,3 +126,5 @@ if min_acc_eur > max_acc_afr:
 else:
     print('No.')
 print('-'*60)
+
+print('Consider only countries which has more than 90% of population with internet access:')
